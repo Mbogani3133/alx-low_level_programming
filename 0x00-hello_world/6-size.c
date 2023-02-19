@@ -3,18 +3,20 @@
  *main - entry point
  *
  *return: always 0 (Success)
- */
-int main()
+*/
+int main(void)
 {
-  int integerType;
-  float floatType;
-  double doubleType;
-  char charType;
-
-  // Sizeof operator is used to evaluate the size of a variable
-  printf("Size of int: %ld bytes\n", sizeof(integerType));
-  printf("Size of float: %ld bytes\n", sizeof(floatType));
-  printf("Size of double: %ld bytes\n", sizeof(doubleType));
-  printf("Size of char: %ld byte\n", sizeof(charType));
-  return (0);
+int a;
+long int b;
+long long int c; 
+char d;
+float e;
+/*Size of  operator is used to evaluate size of a variable*/
+ 
+printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of long int: %lu byte(s)\n",(unsigned long)sizeof(b));
+printf("Size of long long int: %lu byte(s)\n", (unsigned long)sizeof(c)));
+printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("Size of float: %lu byte(s)\n", (unsigned long)sizeof(e));
+return (0);
 }
