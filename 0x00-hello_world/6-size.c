@@ -1,22 +1,23 @@
 #include <stdio.h>
+
 /**
- *main - entry point
+ * main - Entry point
  *
- *return: always 0 (Success)
-*/
+ * return: always 0 (Success)
+ */
 int main(void)
 {
-int a;
-long int b;
-long long int c; 
-char d;
-float e;
-/*Size of  operator is used to evaluate size of a variable*/
- 
-printf("Size of int: %lu byte(s)\n", (unsigned long)sizeof(a));
-printf("Size of long int: %lu byte(s)\n",(unsigned long)sizeof(b));
-printf("Size of long long int: %lu byte(s)\n", (unsigned long)sizeof(c)));
-printf("Size of char: %lu byte(s)\n", (unsigned long)sizeof(d));
-printf("Size of float: %lu byte(s)\n", (unsigned long)sizeof(e));
-return (0);
+  int integerType;
+  float floatType;
+  char charType;
+  long int longintType;
+  long long int longlongintType;
+
+  /*Sizeof operator is used to evaluate the size of a variable*/
+  printf("size of int: %lu byte(s)\n", (unsigned long)sizeof(integerType));
+  printf("size of float: %lu byte(s)\n", (unsigned long)sizeof(floatType));
+  printf("size of char: %lu byte(s)\n", (unsigned long)sizeof(charType));
+  printf("size of long int: %lu byte(s)\n", (unsigned long)sizeof(longintType));
+  printf("size f long long int: %lu byte(s)\n", (unsigned long)sizeof(longlongintType));
+  return (0);
 }
