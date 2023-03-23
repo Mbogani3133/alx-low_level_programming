@@ -5,7 +5,7 @@
  *
  * @n: start of input variables
  *
- * Return: the sum of all Parameters 
+ * Return: the sum of all Parameters
  */
 
 int sum_them_all(const unsigned int n, ...)
@@ -13,7 +13,7 @@ int sum_them_all(const unsigned int n, ...)
 	va_list ap;
 	unsigned int param, sum = 0;
 
-	/* initialize the argument*/ 
+	/* initialize the argument*/
 	va_start(ap, n);
 
 	/* iterate through parameter values*/
